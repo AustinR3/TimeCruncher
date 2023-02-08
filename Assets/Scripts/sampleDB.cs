@@ -26,7 +26,7 @@ public class sampleDB : MonoBehaviour {
 
 		// Insert values in table
 		IDbCommand cmnd = dbcon.CreateCommand();
-		cmnd.CommandText = "INSERT INTO level_table1 (id, val) VALUES (100, 1), (101, 2), (102, 3), (103, 4)";
+		cmnd.CommandText = "INSERT or IGNORE INTO level_table1 (id, val) VALUES (100, 1), (101, 2), (102, 3), (103, 4)";
 		cmnd.ExecuteNonQuery();
 
 		// Read and print all values in table
