@@ -9,7 +9,7 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        this.transform.position = new Vector3(followPlayer.position.x, followPlayer.position.y, -10);
+        this.transform.position = new Vector3(followPlayer.position.x, followPlayer.position.y, -8);
 
     }
 }
