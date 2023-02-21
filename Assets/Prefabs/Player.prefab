@@ -13,13 +13,14 @@ GameObject:
   - component: {fileID: 4534488119977696675}
   - component: {fileID: 4534488119977696674}
   - component: {fileID: 4534488119977696686}
+  - component: {fileID: -6677409554006908787}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4534488119977696685
 Transform:
   m_ObjectHideFlags: 0
@@ -150,3 +151,17 @@ MonoBehaviour:
   jump: 700
   rb: {fileID: 4534488119977696675}
   isJumping: 0
+--- !u!114 &-6677409554006908787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4534488119977696673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0669e44466b1d044ade2f25b07a2b3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterDB: {fileID: 11400000, guid: 68c8f8cc6effb0348953f1d9be401ab8, type: 2}
+  artworkSprite: {fileID: 4534488119977696684}
