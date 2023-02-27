@@ -207,7 +207,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1761168374}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: Home
+        m_MethodName: MainMenu
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -549,7 +549,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 361.42053, y: 202}
+  m_AnchoredPosition: {x: 0, y: 235}
   m_SizeDelta: {x: 95.159, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1761168377
@@ -880,7 +880,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 22.4556, y: 192.08086}
+  m_AnchoredPosition: {x: -739.14, y: 227.88}
   m_SizeDelta: {x: 199.7112, y: 65.2383}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3908332493675092176
