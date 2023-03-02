@@ -7,13 +7,18 @@ public class PlayerMovement : MonoBehaviour
     public float jump;
     private float Move;
     public Rigidbody2D rb;
-
     public bool isJumping;
+    private Animator anim;
+    private SpriteRenderer sprite;
+
+    private enum MovementState { idle, running, jumping, falling }
+    
 
 void Start() 
 {
     
-
+anim = GetComponent<Animator>(); 
+sprite = GetComponent<SpriteRenderer>();
 
 }
 
@@ -32,7 +37,53 @@ rb.AddForce(new Vector2(rb.velocity.x, jump));
 
 }
 
+
+UpdateAnimation();
+
 }
+
+
+
+private void UpdateAnimation()
+{
+
+    MovementState state;
+
+if (Move > 0f)
+{
+    state = MovementState.running;
+    sprite.flipX = false;
+    
+}
+
+else if (Move < 0f)
+{
+    state = MovementState.running;
+    sprite.flipX = true;
+}
+else 
+{
+    state = MovementState.idle;
+}
+
+if (rb.velocity.y > .1f)
+{
+    state = MovementState.jumping;
+}
+else if (rb.velocity.y < -.1f)
+{
+    state = MovementState.falling;
+}
+
+anim.SetInteger("state", (int)state);
+
+}
+
+
+
+
+
+
 
 private void OnCollisionEnter2D(Collision2D other) 
 {
@@ -49,6 +100,7 @@ private void OnCollisionExit2D(Collision2D other)
         isJumping = true;
     }
 }
+
 
 
 
