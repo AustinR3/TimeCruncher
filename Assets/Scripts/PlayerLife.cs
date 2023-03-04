@@ -9,7 +9,7 @@ public class PlayerLife : MonoBehaviour
     private Animator anim;
     private void Start()
     {
-        //anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -28,8 +28,7 @@ public class PlayerLife : MonoBehaviour
     private void Die()
     {
         rb.bodyType = RigidbodyType2D.Static;
-        RestartLevel();
-        //anim.SetTrigger("death");
+        anim.SetTrigger("death");
         
     }
 
