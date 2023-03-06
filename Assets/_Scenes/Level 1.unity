@@ -53529,10 +53529,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: InGameMenu
       objectReference: {fileID: 0}
-    - target: {fileID: 1093671718200099550, guid: 0b22ab8d56a139041b4928f115faf2e1, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1093671718200099551, guid: 0b22ab8d56a139041b4928f115faf2e1, type: 3}
       propertyPath: m_RootOrder
       value: 5
