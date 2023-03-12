@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     private enum MovementState { idle, running, jumping, falling }
     
+    [SerializeField] private AudioSource jumpSoundEffect;
 
 void Start() 
 {
@@ -34,6 +35,7 @@ if(Input.GetButtonDown("Jump") && isJumping == false)
 {
 
 rb.AddForce(new Vector2(rb.velocity.x, jump));
+jumpSoundEffect.Play();
 
 }
 
