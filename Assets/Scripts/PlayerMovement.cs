@@ -1,10 +1,10 @@
 using UnityEngine;
-
+using System.Collections;
 public class PlayerMovement : MonoBehaviour
 {
     
     public float speed;
-    public float jump;
+    private float jump = 14f;
     private float Move;
     public Rigidbody2D rb;
     public bool isJumping;
@@ -29,12 +29,13 @@ void Update()
 Move = Input.GetAxis("Horizontal");
 
 rb.velocity = new Vector2(speed * Move, rb.velocity.y);
-
+//rb.velocity = new Vector2(dirX * speed, rb.velocity.y);
 
 if(Input.GetButtonDown("Jump") && isJumping == false)
 {
 
-rb.AddForce(new Vector2(rb.velocity.x, jump));
+//rb.AddForce(new Vector2(rb.velocity.x, jump));
+rb.velocity = new Vector2(rb.velocity.x, jump);
 jumpSoundEffect.Play();
 
 }
@@ -82,9 +83,29 @@ anim.SetInteger("state", (int)state);
 }
 
 
+private void OnTriggerEnter2D(Collider2D collision) 
+
+{
+
+if(collision.tag == "Powerup")
+{
+    Destroy(collision.gameObject);
+    jump = 20f;
+    GetComponent <SpriteRenderer>().color = Color.red;
+    StartCoroutine(ResetPower ());
+}
 
 
+}
 
+
+private IEnumerator ResetPower()
+{
+    yield return new WaitForSeconds(6);
+    jump = 14f;
+    GetComponent <SpriteRenderer>().color = Color.white;
+
+}
 
 
 private void OnCollisionEnter2D(Collision2D other) 
@@ -102,6 +123,7 @@ private void OnCollisionExit2D(Collision2D other)
         isJumping = true;
     }
 }
+
 
 
 
