@@ -6,7 +6,8 @@ TagManager:
   tags:
   - Floor
   - Trap
-  - Powerup
+  - JumpPower
+  - SpeedPower
   layers:
   - Default
   - TransparentFX

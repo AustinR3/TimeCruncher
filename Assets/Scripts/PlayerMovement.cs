@@ -3,7 +3,8 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour
 {
     
-    public float speed;
+    // public float speed;
+    private float speed = 5f;
     private float jump = 14f;
     private float Move;
     public Rigidbody2D rb;
@@ -28,8 +29,8 @@ void Update()
 
 Move = Input.GetAxis("Horizontal");
 
-rb.velocity = new Vector2(speed * Move, rb.velocity.y);
-//rb.velocity = new Vector2(dirX * speed, rb.velocity.y);
+//rb.velocity = new Vector2(speed * Move, rb.velocity.y);
+rb.velocity = new Vector2(Move * speed, rb.velocity.y);
 
 if(Input.GetButtonDown("Jump") && isJumping == false)
 {
@@ -87,11 +88,19 @@ private void OnTriggerEnter2D(Collider2D collision)
 
 {
 
-if(collision.tag == "Powerup")
+if(collision.tag == "JumpPower")
 {
     Destroy(collision.gameObject);
     jump = 20f;
     GetComponent <SpriteRenderer>().color = Color.red;
+    StartCoroutine(ResetPower ());
+}
+
+if(collision.tag == "SpeedPower")
+{
+    Destroy(collision.gameObject);
+    speed = 8f;
+    GetComponent <SpriteRenderer>().color = Color.blue;
     StartCoroutine(ResetPower ());
 }
 
@@ -103,6 +112,7 @@ private IEnumerator ResetPower()
 {
     yield return new WaitForSeconds(6);
     jump = 14f;
+    speed = 5f;
     GetComponent <SpriteRenderer>().color = Color.white;
 
 }
