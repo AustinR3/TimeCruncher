@@ -151,8 +151,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3796064eb06dafa479d36a78899b417f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  jump: 700
   rb: {fileID: 385517280705907053}
   isJumping: 0
   jumpSoundEffect: {fileID: 4534488120653167820}
