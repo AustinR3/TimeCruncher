@@ -8,6 +8,8 @@ public class Timer : MonoBehaviour
     public Text displayText = null;
     public float value;
 
+    private int highScore = 0;
+
     // Update is called once per frame
     void Update()
     {
@@ -15,5 +17,12 @@ public class Timer : MonoBehaviour
         {
             displayText.text = "Time: " + (int)(value += Time.deltaTime);
         }
+
+        SetScore();
+    }
+
+    public void SetScore()
+    {
+        PlayerPrefs.SetInt("HighScore", highScore);
     }
 }

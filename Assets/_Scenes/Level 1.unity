@@ -676,6 +676,35 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &855718126 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1617407026105355780, guid: 0b22ab8d56a139041b4928f115faf2e1, type: 3}
+  m_PrefabInstance: {fileID: 8991765214757906749}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &855718128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855718126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa6bd2338d601b840886c490ad8205f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 855718129}
+--- !u!114 &855718129 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5169788348247464245, guid: 0b22ab8d56a139041b4928f115faf2e1, type: 3}
+  m_PrefabInstance: {fileID: 8991765214757906749}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855718126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &861212788
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54137,5 +54166,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3369132255568302723, guid: 0b22ab8d56a139041b4928f115faf2e1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0b22ab8d56a139041b4928f115faf2e1, type: 3}
