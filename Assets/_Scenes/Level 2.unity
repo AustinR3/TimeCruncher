@@ -386,6 +386,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &326297816 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 385517280705907043, guid: 973a33c4a78aa704dae7ef5460433b0d, type: 3}
+  m_PrefabInstance: {fileID: 913237061}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &359911676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -973,11 +978,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5897566227591782343, guid: a3bf6644d2bbb4d45aa6ea6265c1c288, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.74
+      value: 6.48
       objectReference: {fileID: 0}
     - target: {fileID: 5897566227591782343, guid: a3bf6644d2bbb4d45aa6ea6265c1c288, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.63
+      value: 0.72
       objectReference: {fileID: 0}
     - target: {fileID: 5897566227591782343, guid: a3bf6644d2bbb4d45aa6ea6265c1c288, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1237,11 +1242,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 316304284321032369, guid: 624e6c91dc60a6b409d407e90825d6d1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.54
+      value: 11.65
       objectReference: {fileID: 0}
     - target: {fileID: 316304284321032369, guid: 624e6c91dc60a6b409d407e90825d6d1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.87
+      value: 2.58
       objectReference: {fileID: 0}
     - target: {fileID: 316304284321032369, guid: 624e6c91dc60a6b409d407e90825d6d1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1341,11 +1346,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 316304284321032369, guid: 624e6c91dc60a6b409d407e90825d6d1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.09
+      value: 40.43
       objectReference: {fileID: 0}
     - target: {fileID: 316304284321032369, guid: 624e6c91dc60a6b409d407e90825d6d1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.4
+      value: 5.47
       objectReference: {fileID: 0}
     - target: {fileID: 316304284321032369, guid: 624e6c91dc60a6b409d407e90825d6d1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -48577,7 +48582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b662b641b4293848af94c7c2dc29277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followPlayer: {fileID: 0}
+  followPlayer: {fileID: 326297816}
 --- !u!82 &2070471950
 AudioSource:
   m_ObjectHideFlags: 0

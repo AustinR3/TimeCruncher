@@ -21,6 +21,14 @@ public class Finish : MonoBehaviour
             Invoke("CompleteLevel", 1f);
           
         }
+
+        if (collision.gameObject.name == "Player2" && !levelCompleted)
+        {
+            finishSound.Play();
+            levelCompleted = true;
+            Invoke("CompleteLevel", 1f);
+          
+        }
     }
 
     private void CompleteLevel()
